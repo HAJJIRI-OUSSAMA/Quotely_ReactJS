@@ -1,0 +1,97 @@
+.body {
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow-x: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+    z-index: 3;
+}
+
+.logo:hover {
+    text-decoration: underline #000;
+    transition: underline 1s ease;
+}
+
+@keyframes birdsFlying {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -200vw;
+    }
+}
+
+.birdsContainer {
+    position: absolute;
+    top: 10vw;
+    animation-name: birdsFlying;
+    animation-delay: 0s;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 3;
+}
+
+.welcome {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    line-height: 100vh;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.getStartedButton {
+    background: white;
+    border: 2px solid #000;
+    font-size: 1.4rem;
+    font-family: monospace;
+    position: relative;
+    z-index: 1;
+    margin: .5rem .3rem;
+}
+
+.getStartedButton:hover {
+    background: #0f0;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.additionalText {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
